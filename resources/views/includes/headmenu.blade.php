@@ -22,95 +22,8 @@
         </div>
         <nav class="offcanvas-menu">
             <ul>
-                <li><a href="#"><span class="menu-text">Home</span></a>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="index.html">Home 1</a></li>
-                        <li><a href="index-2.html">Home 2</a></li>
-                        <li><a href="index-3.html">Home 3</a></li>
-                        
-                    </ul>
-
-                </li>
-                <li><a href="#"><span class="menu-text">Shop</span></a>
-                    <ul class="offcanvas-submenu">
-                        <li>
-                            <a href="#"><span class="menu-text">Shop Grid</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="shop-grid-3-column.html">Shop Grid 3 Column</a></li>
-                                <li><a href="shop-grid-4-column.html">Shop Grid 4 Column</a></li>
-                                <li><a href="shop-grid-left-sidebar.html">Shop Grid Left Sidebar</a></li>
-                                <li><a href="shop-grid-right-sidebar.html">Shop Grid Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span class="menu-text">Shop List</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="shop-grid-list.html">Shop List</a></li>
-                                <li><a href="shop-grid-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                <li><a href="shop-grid-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span class="menu-text">Shop Single</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a class="d-block" href="single-product.html">Shop Single</a></li>
-                                <li><a href="single-product-configurable.html">Shop Variable</a></li>
-                                <li><a href="single-product-affiliate.html">Shop Affiliate</a></li>
-                                <li><a href="single-product-group.html">Shop Group</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span class="menu-text">other pages</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="about-us.html">About Page</a></li>
-                                <li><a href="cart.html">Cart Page</a></li>
-                                <li><a href="checkout.html">Checkout Page</a></li>
-                                <li><a href="compare.html">Compare Page</a></li>
-                                <li><a href="login.html">Login &amp; Register Page</a></li>
-                                <li><a href="myaccount.html">Account Page</a></li>
-                                <li><a href="wishlist.html">Wishlist Page</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#"><span class="menu-text">Pages</span></a>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="about-us.html">About Page</a></li>
-                        <li><a href="cart.html">Cart Page</a></li>
-                        <li><a href="checkout.html">Checkout Page</a></li>
-                        <li><a href="compare.html">Compare Page</a></li>
-                        <li><a href="login.html">Login &amp; Register Page</a></li>
-                        <li><a href="myaccount.html">Account Page</a></li>
-                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><span class="menu-text">Blog</span></a>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#"><span class="menu-text">Blog Grid</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="blog-grid-3-column.html">Blog Grid 3 column</a></li>
-                                <li><a href="blog-grid-4-column.html">Blog Grid 4 column</a></li>
-                                <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a>
-                                </li>
-                                <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="menu-text">Blog List</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
-                                <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="menu-text">Blog Single</span></a>
-                            <ul class="offcanvas-submenu">
-                                <li><a href="single-blog.html">Single Blog</a></li>
-                                <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                                <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidbar</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="{{URL::to('main')}}"><span class="menu-text">Home</span></a></li>
+                <li><a href="{{URL::to('contact')}}">Contact Us</a></li>
             </ul>
         </nav>
         <div class="offcanvas-social py-30">
@@ -145,7 +58,7 @@
         </div>
         <ul class="minicart-product-list">
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/4.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/4.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Walnut Cutting Board</a>
@@ -154,7 +67,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/5.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/5.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Lucky Wooden Elephant</a>
@@ -163,7 +76,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/6.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/6.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Fish Cut Out Set</a>
@@ -187,7 +100,7 @@
         </div>
         <ul class="minicart-product-list">
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/1.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/1.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Walnut Cutting Board</a>
@@ -196,7 +109,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/2.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/2.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Lucky Wooden Elephant</a>
@@ -205,7 +118,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="assets/img/product/3.jpg"
+                <a href="single-product.html" class="image"><img src="{{URL::asset('resources/assets/img/product/3.jpg')}}"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Fish Cut Out Set</a>
@@ -218,9 +131,9 @@
             <strong>Subtotal :</strong>
             <span class="amount">$144.00</span>
         </div>
-        <a href="cart.html" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block me-sm-2">view
+        <a href="{{URL::to('cart')}}" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block me-sm-2">view
             cart</a>
-        <a href="checkout.html"
+        <a href="{{URL::to('checkout')}}"
             class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0">checkout</a>
         <p class="minicart-message">Free Shipping on All Orders Over $100!</p>
     </div>
@@ -256,13 +169,13 @@
                 <ul>
                     <li class="active">
                         <a href="#">
-                            <img src="assets/img/logo/france.jpg" alt="img" />
+                            <img src="{{URL::asset('resources/assets/img/logo/france.jpg')}}" alt="img" />
                             English
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/img/logo/us-flag.jpg" alt="img" />Français
+                            <img src="{{URL::asset('resources/assets/img/logo/us-flag.jpg')}}" alt="img" />Français
                         </a>
                     </li>
                 </ul>
@@ -289,121 +202,14 @@
                 <div class="col-9 col-xl-7 position-xl-relative">
                     <div class="d-flex align-items-center justify-content-lg-between">
                         <div class="logo me-lg-5 me-xl-0">
-                            <a href="index.html"><img src="assets/img/logo/logo-dark.jpg" alt="logo"></a>
+                            <a href="index.html"><img src="{{URL::asset('resources/assets/img/logo/logo-dark.jpg')}}" alt="logo"></a>
                         </div>
                         <nav class="header-bottom theme1 d-none d-lg-block">
                             <ul class="main-menu d-flex align-items-center">
                                 <li class="active">
-                                    <a href="#" class="ps-0">Home <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                        
-                                    </ul>
+                                    <a href="{{URL::to('main')}}" class="ps-0">Home</a>
                                 </li>
-                                <li class="position-static">
-                                    <a href=" #">Shop <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="mega-menu mega-menu-custom-with row">
-                                        <li class="col-3">
-                                            <ul class="border-right h-100 pe-20">
-                                                <li class="mega-menu-title"><a href="#">Shop Grid</a></li>
-                                                <li><a href="shop-grid-3-column.html">Shop Grid 3 Column</a></li>
-                                                <li><a href="shop-grid-4-column.html">Shop Grid 4 Column</a></li>
-                                                <li><a href="shop-grid-left-sidebar.html">Shop Grid Left Sidebar</a>
-                                                </li>
-                                                <li><a href="shop-grid-right-sidebar.html">Shop Grid Right
-                                                        Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="col-3">
-                                            <ul class="border-right h-100 pe-20">
-                                                <li class="mega-menu-title"><a href="#">Shop List</a></li>
-                                                <li><a href="shop-grid-list.html">Shop List</a></li>
-                                                <li><a href="shop-grid-list-left-sidebar.html">Shop List Left
-                                                        Sidebar</a>
-                                                </li>
-                                                <li><a href="shop-grid-list-right-sidebar.html">Shop List Right
-                                                        Sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="col-3">
-                                            <ul class="border-right h-100 pe-20">
-                                                <li class="mega-menu-title"><a href="#">Shop Single</a></li>
-                                                <li><a href="single-product.html">Shop Single</a></li>
-                                                <li><a href="single-product-configurable.html">Shop Variable</a>
-                                                </li>
-                                                <li><a href="single-product-affiliate.html">Shop Affiliate</a></li>
-                                                <li><a href="single-product-group.html">Shop Group</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="col-3">
-                                            <ul>
-                                                <li class="mega-menu-title"><a href="#">other pages</a></li>
-                                                <li><a href="about-us.html">About Page</a></li>
-                                                <li><a href="cart.html">Cart Page</a></li>
-                                                <li><a href="checkout.html">Checkout Page</a></li>
-                                                <li><a href="compare.html">Compare Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="col-12 mt-4">
-                                            <a href="single-product.html" class="zoom-in overflow-hidden d-block">
-                                                <img class="w-100" src="assets/img/mega-menu/1.jpg" alt="img">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Pages <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about-us.html">About Page</a></li>
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                        <li><a href="compare.html">Compare Page</a></li>
-                                        <li><a href="login.html">Login &amp; Register Page</a></li>
-                                        <li><a href="myaccount.html">Account Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Blog <i class="ion-ios-arrow-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="#">Blog Grid</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog-grid-3-column.html">Blog Grid 3 column</a></li>
-                                                <li><a href="blog-grid-4-column.html">Blog Grid 4 column</a></li>
-                                                <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-grid-right-sidebar.html">Blog Grid Right
-                                                        Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog List</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-list-right-sidebar.html">Blog List Right
-                                                        Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Single</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="single-blog.html">Single Blog</a></li>
-                                                <li><a href="blog-single-left-sidebar.html">Blog Single Left
-                                                        Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-single-right-sidebar.html">Blog Single Right
-                                                        Sidbar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">contact Us</a></li>
+                                <li><a href="{{URL::to('contact')}}">contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -413,32 +219,10 @@
                     <div class="d-flex align-items-center justify-content-end">
                         <div class="cart-block-links theme1">
                             <ul class="d-flex align-items-center">
-                                <li>
-                                    <a href="javascript:void(0)" class="search search-toggle">
-                                        <i class="ion-ios-search-strong"></i>
-                                    </a>
-                                </li>
-                                <li class="position-relative d-none d-sm-block">
-                                    <a href="compare.html">
-                                        <i class="ion-ios-shuffle-strong"></i>
-                                        <span class="badge cbdg1">3</span>
-                                    </a>
-                                </li>
-                                <li class="position-relative d-none d-sm-block">
-                                    <a class="offcanvas-toggle" href="#offcanvas-wishlist">
-                                        <i class="ion-android-favorite-outline"></i>
-                                        <span class="badge cbdg1">4</span>
-                                    </a>
-                                </li>
                                 <li class="cart-block position-relative d-none d-sm-block">
                                     <a class="offcanvas-toggle" href="#offcanvas-cart">
                                         <i class="ion-bag"></i>
                                         <span class="badge cbdg1">5</span>
-                                    </a>
-                                </li>
-                                <li class="me-0 cart-block">
-                                    <a class="offcanvas-toggle" href="#offcanvas-setting">
-                                        <i class="ion-android-settings"></i>
                                     </a>
                                 </li>
                                 <!-- cart block end -->

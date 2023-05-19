@@ -8,7 +8,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo mb-30">
                             <a href="index.html">
-                                <img src="assets/img/logo/logo-dark.jpg" alt="footer logo">
+                                <img src="{{URL::asset('resources/assets/img/logo/logo-dark.jpg')}}" alt="footer logo">
                             </a>
                         </div>
                         <p class="text mb-35">We are a team of designers and developers that create high quality

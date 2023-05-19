@@ -29,21 +29,21 @@ Route::get('main', function () {
     return view('pages.main');
 });
 
-Route::get('formCreate', function () {
-    return view('pages.formCreate');
+Route::get('cart', function () {
+    return view('pages.cart');
 });
 
-Route::get('master_basket_company', function () {
-    return view('pages.master_basket_company');
+Route::get('checkout', function () {
+    return view('pages.checkout');
 });
 
 
 Route::get('/', function () {
-    return view('pages.login');
-})->name('login');
+    return view('pages.main');
+})->name('main');
 
-Route::get('job_assign', function () {
-    return view('pages.job_assign');
+Route::get('contact', function () {
+    return view('pages.contract');
 });
 
 Route::get('job_assign_details', function () {
